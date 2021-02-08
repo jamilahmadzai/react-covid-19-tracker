@@ -7,6 +7,16 @@ body {
   background-color: #e8e8e8;
 }
 
+.app {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.app_left {
+  flex: 0.8;
+}
+
 .app_header {
   /* width: 80%; */
   display: flex;
@@ -18,4 +28,10 @@ body {
 .app_stats {
   display: flex;
   justify-content: space-between;
+}
+
+@media (max-width: 700px) {
+  .app {
+    flex-direction: column;
+  }
 }
