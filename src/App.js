@@ -10,6 +10,7 @@ import InfoBox from "./InfoBox";
 import Map from "./Map";
 import Table from "./Table";
 import { sortData } from "./sort";
+import LineGraph from "./LineGraph";
 
 const countriesList = "https://disease.sh/v3/covid-19/countries";
 
@@ -105,7 +106,8 @@ function App() {
         <CardContent>
           <h2>Live Cases by Countries</h2>
           <Table countries={tableData} />
-          <h2>New Cases</h2>
+          <h2>Worldwide New Cases</h2>
+          <LineGraph />
         </CardContent>
       </Card>
     </div>
