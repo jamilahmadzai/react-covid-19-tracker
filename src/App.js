@@ -8,6 +8,8 @@ import {
 import React, { useState, useEffect } from "react";
 import InfoBox from "./InfoBox";
 import Map from "./Map";
+import Table from "./Table";
+import { sortData } from "./sort";
 
 const countriesList = "https://disease.sh/v3/covid-19/countries";
 
@@ -15,6 +17,7 @@ function App() {
   const [countries, setCountries] = useState([]);
   const [country, setCountry] = useState("worldwide");
   const [countryInfo, setCountryInfo] = useState({});
+  const [tableData, setTableData] = useState([]);
 
   useEffect(() => {
     fetch("https://disease.sh/v3/covid-19/all")
@@ -33,6 +36,8 @@ function App() {
               value: country.countryInfo.iso3,
             };
           });
+          const sortedData = sortData(data);
+          setTableData(sortedData);
           setCountries(countries);
         });
     };
@@ -98,7 +103,8 @@ function App() {
       </div>
       <Card className="app_right">
         <CardContent>
-          <h2>Live Cases By Country</h2>
+          <h2>Live Cases by Countries</h2>
+          <Table countries={tableData} />
           <h2>New Cases</h2>
         </CardContent>
       </Card>
