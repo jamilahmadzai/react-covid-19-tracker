@@ -1,0 +1,23 @@
+[33mcommit 3881356b4d80c50d56e8f000c4a2b970eb6a5703[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Jamil Ur Rehman Ahmadzai <jamilurrehman722@gmail.com>
+Date:   Mon Feb 8 06:15:46 2021 +0100
+
+    divided app into left and right parts
+
+[33mcommit c7ed94e3adb427619196cfccf251e7726b0d7776[m
+Author: Jamil Ur Rehman Ahmadzai <jamilurrehman722@gmail.com>
+Date:   Mon Feb 8 05:56:55 2021 +0100
+
+    added c0rona related info boxes
+
+[33mcommit b6ff320a7e37bd7b0e1bcf71318b3e3e6ba69b9c[m
+Author: Jamil Ur Rehman Ahmadzai <jamilurrehman722@gmail.com>
+Date:   Mon Feb 8 05:25:12 2021 +0100
+
+    first commit
+
+[33mcommit 6bb39c6b9745997bc15141a12e28fe7c078c2c20[m
+Author: Jamil Ur Rehman Ahmadzai <jamilurrehman722@gmail.com>
+Date:   Mon Feb 8 03:50:05 2021 +0100
+
+    Initialize project using Create React App
