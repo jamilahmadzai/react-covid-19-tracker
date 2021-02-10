@@ -8,3 +8,5 @@ Build a simple covid-19 tracker app with react and material UI
 - Different react hooks (useState, useEffect)
 - Material UI
 - Working with graphs in react
+
+[Click Here for Demo](https://covid-19-tracker-789bb.web.app/)
